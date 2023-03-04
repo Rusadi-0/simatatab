@@ -39,6 +39,10 @@
 <!-- / Layout wrapper -->
 
 <!-- Core JS -->
+
+<!-- ja_me -->
+<script src="<?= base_url('assets/') ?>js/js_me/script.js"></script>
+
 <!-- build:js assets/vendor/js/core.js -->
 <script src="../assets/vendor/libs/jquery/jquery.js"></script>
 <script src="../assets/vendor/libs/popper/popper.js"></script>

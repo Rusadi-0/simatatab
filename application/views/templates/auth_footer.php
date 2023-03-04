@@ -1,22 +1,26 @@
+<!-- Core JS -->
 
-    <!-- Core JS -->
-    <!-- build:js assets/vendor/js/core.js -->
-    <script src="<?= base_url('assets/')?>vendor/libs/jquery/jquery.js"></script>
-    <script src="<?= base_url('assets/')?>vendor/libs/popper/popper.js"></script>
-    <script src="<?= base_url('assets/')?>vendor/js/bootstrap.js"></script>
-    <script src="<?= base_url('assets/')?>vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+<!-- ja_me -->
+<script src="<?= base_url('assets/') ?>js/js_me/script.js"></script>
 
-    <script src="<?= base_url('assets/')?>vendor/js/menu.js"></script>
-    <!-- endbuild -->
+<!-- build:js assets/vendor/js/core.js -->
+<script src="<?= base_url('assets/') ?>vendor/libs/jquery/jquery.js"></script>
+<script src="<?= base_url('assets/') ?>vendor/libs/popper/popper.js"></script>
+<script src="<?= base_url('assets/') ?>vendor/js/bootstrap.js"></script>
+<script src="<?= base_url('assets/') ?>vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
 
-    <!-- Vendors JS -->
+<script src="<?= base_url('assets/') ?>vendor/js/menu.js"></script>
+<!-- endbuild -->
 
-    <!-- Main JS -->
-    <script src="<?= base_url('assets/')?>js/main.js"></script>
+<!-- Vendors JS -->
 
-    <!-- Page JS -->
+<!-- Main JS -->
+<script src="<?= base_url('assets/') ?>js/main.js"></script>
 
-    <!-- Place this tag in your head or just before your close body tag. -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-  </body>
+<!-- Page JS -->
+
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
+
 </html>

@@ -32,6 +32,9 @@
 
     <!-- Icons. Uncomment required icon fonts -->
     <link rel="stylesheet" href="<?= base_url('assets/'); ?>vendor/fonts/boxicons.css" />
+    
+    <!-- animation.io -->
+    <link rel="stylesheet" href="<?= base_url('assets/'); ?>css/animate.css" />
 
     <!-- Core CSS -->
     <link rel="stylesheet" href="<?= base_url('assets/'); ?>vendor/css/core.css" class="template-customizer-core-css" />
@@ -46,6 +49,8 @@
     <!-- Page CSS -->
 
     <!-- Helpers -->
+    
+    <script src="<?= base_url('assets/'); ?>vendor/libs/jquery/jquery.js"></script>
     <script src="<?= base_url('assets/'); ?>vendor/js/helpers.js"></script>
 
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->

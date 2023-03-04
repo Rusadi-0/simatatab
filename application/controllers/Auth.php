@@ -56,21 +56,21 @@ class Auth extends CI_Controller
                         redirect('Dashboard');
                     }
                 } else {
-                    $this->session->set_flashdata('message', '<div class="alert alert-danger alert-dismissible" role="alert">
+                    $this->session->set_flashdata('message', '<div class="alert alert-danger alert-dismissible animate__animated animate__slideInDown animate__faster" role="alert">
                     <strong>Nama Pengguna</strong> atau <strong>Kata Sandi</strong> Salah!
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                   </div>');
                     redirect('auth');
                 }
             } else {
-                $this->session->set_flashdata('message', '<div class="alert alert-danger alert-dismissible" role="alert">
+                $this->session->set_flashdata('message', '<div class="alert alert-danger alert-dismissible animate__animated animate__slideInDown animate__faster" role="alert">
                 <strong>Nama Pengguna</strong> tidak aktif!
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
               </div></div>');
                 redirect('auth');
             }
         } else {
-            $this->session->set_flashdata('message', '<div class="alert alert-danger alert-dismissible" role="alert">
+            $this->session->set_flashdata('message', '<div class="alert alert-danger alert-dismissible animate__animated animate__slideInDown animate__faster" role="alert">
             <strong>Nama Pengguna</strong> tidak ada!!
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
           </div>');
