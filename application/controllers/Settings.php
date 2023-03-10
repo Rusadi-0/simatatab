@@ -15,7 +15,9 @@ class Settings extends CI_Controller
     {
         $data['title'] = 'Setting Account';
         $data['openMenu'] = 'Settings';
+        $data['sub'] = '';
         $data['user'] = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
+        $data['userRole'] = $this->db->get('user_role')->result_array();
 
 
 

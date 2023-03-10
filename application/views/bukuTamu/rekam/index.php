@@ -6,7 +6,7 @@
   <div class="col-md-6 col-lg-4 mb-3">
     <div class="card">
       <div class="foto" id="results">
-        <img class="card-img-top" src="<?= base_url('assets/') ?>img/elements/index.png" alt="Card image cap">
+        <img class="card-img-top" src="<?= base_url('/') ?>img/index.jpg" alt="Card image cap">
       </div>
       <div class="card-body">
         <h5 class="card-title">Kamera</h5>
@@ -14,9 +14,9 @@
         </p>
         <form action="<?= base_url('/'); ?>BukuTamu/unRekam" method="post">
           <div class="tab-pane fade show active">
-            <button type="button" id="ambil" onclick="take_snapshot()" class="btn btn-outline-primary mt-1"><i class='bx bxs-camera'></i> Ambil Gambar</button>
+            <button type="button" id="ambil" onclick="take_snapshot()" class="btn btn-primary mt-1"><i class='bx bxs-camera'></i> Ambil Gambar</button>
             <input type="hidden" value="" name="hapusGmr" id="gambar1">
-            <button id="reset" type="submit" disabled class="btn btn-outline-danger mt-1"><i class='bx bx-reset'></i> Reset</button>
+            <button id="reset" type="submit" disabled class="btn btn-danger mt-1"><i class='bx bx-reset'></i> Reset</button>
           </div>
         </form>
       </div>
@@ -100,7 +100,7 @@
           </div>
 
 
-          <input type="hidden" value="index.jpg" id="gambar" name="gambar">
+          <input type="hidden" value="tidak ada" id="gambar" name="gambar">
           <button type="submit" id="rekam" name="submit" class="btn btn-primary"><i class='bx bxs-save'></i> Simpan</button>
         </form>
       </div>

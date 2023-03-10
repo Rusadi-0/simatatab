@@ -28,7 +28,7 @@
                 <li class="nav-item navbar-dropdown dropdown-user dropdown">
                   <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
                     <div class="avatar avatar-online">
-                      <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                      <img src="<?= base_url('/'); ?>assets/img/users/<?= $user['image']; ?>" alt class="w-px-40 h-auto rounded-circle" />
                     </div>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end">
@@ -37,12 +37,19 @@
                         <div class="d-flex">
                           <div class="flex-shrink-0 me-3">
                             <div class="avatar avatar-online">
-                              <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                              <img src="<?= base_url('/'); ?>assets/img/users/default.jpg" alt class="w-px-40 h-auto rounded-circle" />
                             </div>
                           </div>
                           <div class="flex-grow-1">
-                            <span class="fw-semibold d-block">John Doe</span>
-                            <small class="text-muted">Admin</small>
+                            <span class="fw-semibold d-block"><?= $user['name']; ?></span>
+                            <small class="text-muted">
+                              <?php foreach ($userRole as $ur) : ?>
+                                <?php if ($ur['id'] == $user['role_id']) {
+                                  echo $ur['role'];
+                                } else {
+                                } ?>
+                              <?php endforeach; ?>
+                            </small>
                           </div>
                         </div>
                       </a>
@@ -92,4 +99,8 @@
             <!-- Content -->
 
             <div class="container-xxl flex-grow-1 container-p-y">
-              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"><?= $openMenu; ?> /</span> <?= $title; ?></h4>
+              <?php if ($sub == "") : ?>
+                <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"><?= $openMenu; ?> /</span> <?= $title; ?></h4>
+              <?php else : ?>
+                <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"><?= $openMenu; ?> / <?= $title; ?> / </span> <span class="badge bg-success"><strong><?= $sub; ?></strong></span></h4>
+              <?php endif; ?>

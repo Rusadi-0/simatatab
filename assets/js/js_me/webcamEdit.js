@@ -12,12 +12,19 @@ Webcam.set({
     });
     var base64image = document.getElementById("imageprev").src;
     
+    document.getElementById("ambil").setAttribute("disabled", true);
+    document.getElementById("reset").disabled = false;
 
     Webcam.upload(base64image, '/BukuTamu/upload', function(code, text) {
+      let gambar = document.getElementById("gambar").value = text;
       document.getElementById("gambar").value = text;
       document.getElementById("gambar1").value = text;
-      document.getElementById("ambil").setAttribute("disabled", true);  
-      document.getElementById('reset').disabled = false;
+      if (gambar == "tidak ada") {
+        document.getElementById("rekamEdit").setAttribute("disabled", true);
+        
+      } else {
+        document.getElementById("rekamEdit").disabled = false;
+      }
     });
   }
 
@@ -25,8 +32,8 @@ Webcam.set({
     evt = evt || window.event;
     if (evt.keyCode == 119) {
         take_snapshot();
-        document.getElementById("ambil").setAttribute("disabled", true);  
-      document.getElementById('reset').disabled = false;
+        document.getElementById("ambilEdit").setAttribute("disabled", true);  
+      document.getElementById('resetEdit').disabled = false;
     };
   };
 

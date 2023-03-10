@@ -3,6 +3,13 @@
 * File include item demo only specific css only
 ******************************************************************************/
 
+.hadi-text-cut{
+  white-space: nowrap;
+  width: 100px;  
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+
 .menu .app-brand.demo {
   height: 64px;
   margin-top: 12px;
